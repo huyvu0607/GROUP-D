@@ -57,5 +57,4 @@ CREATE TABLE Avertise
 )
 GO
 
-DROP TABLE Avertise
-GO
+
