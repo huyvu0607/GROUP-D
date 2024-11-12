@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using FengShuiKoi.Reponsitories.Entities;
 
-namespace FengShuiKoi.WebApp.Pages
+namespace FengShuiKoi.WebApp.Pages.NhanVienAccount
 {
     public class IndexModel : PageModel
     {

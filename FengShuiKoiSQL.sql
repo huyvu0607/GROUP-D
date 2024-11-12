@@ -46,6 +46,7 @@ GO
 CREATE TABLE Avertise
 (
 	ma_khach_hang INT FOREIGN KEY references Khach_hang(ma_khach_hang) on delete cascade on update cascade,
+	ma_quang_cao INT PRIMARY KEY,
 	loai_ca NVARCHAR(255),
 	san_pham_trang_tri NVARCHAR(255),
 	ban_menh NVARCHAR(255),
@@ -54,3 +55,7 @@ CREATE TABLE Avertise
 	ngay_chinh_sua DATETIME DEFAULT CURRENT_TIMESTAMP,
 
 )
+GO
+
+DROP TABLE Avertise
+GO

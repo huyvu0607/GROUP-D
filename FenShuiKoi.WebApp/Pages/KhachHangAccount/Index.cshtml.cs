@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using FengShuiKoi.Reponsitories.Entities;
 
-namespace FengShuiKoi.WebApp.Pages
+namespace FengShuiKoi.WebApp.Pages.KhachHangAccount
 {
     public class IndexModel : PageModel
     {
@@ -18,11 +18,11 @@ namespace FengShuiKoi.WebApp.Pages
             _context = context;
         }
 
-        public IList<NhanVien> NhanVien { get;set; } = default!;
+        public IList<KhachHang> KhachHang { get;set; } = default!;
 
         public async Task OnGetAsync()
         {
-            NhanVien = await _context.NhanViens.ToListAsync();
+            KhachHang = await _context.KhachHangs.ToListAsync();
         }
     }
 }

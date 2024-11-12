@@ -6,6 +6,8 @@ namespace FengShuiKoi.Reponsitories.Entities;
 public partial class Avertise
 {
     public int? MaKhachHang { get; set; }
+    
+    public int? MaQuangCao { get; set; }
 
     public string? LoaiCa { get; set; }
 
